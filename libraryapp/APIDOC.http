@@ -1,0 +1,32 @@
+###
+GET http://127.0.0.1:8000/books/
+Accept: application/json
+
+
+###
+POST http://127.0.0.1:8000/add_book/
+Content-Type: application/json
+
+{
+    "Book_Name": "Demo",
+    "Author": "Arun",
+    "Category": "Horror",
+    "Price": 500,
+    "published_year": 2022,
+    "Availability": true
+}
+
+###
+PUT http://127.0.0.1:8000/update_book/
+Content-Type: application/json
+
+{   
+    "id":1,
+    "Book_Name": "The Book",
+    "Author": "Arun",
+    "Category": "Horror",
+    "Price": 500,
+    "published_year": 2022,
+    "Availability": true
+}
+
